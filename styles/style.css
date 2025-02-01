@@ -1,0 +1,84 @@
+ /* google font quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* shared styles */
+  header{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .nav-header{
+    max-width: 1160px;
+    margin: 20px 140px;
+  }
+  .display-flex{
+    display: flex;
+  }
+  .btn-primary{
+    border-radius: 12px;
+    border: none;
+    background: #FEA301;
+    padding: 10px 60px;
+    color: #FFFFFF;
+
+  }
+  /* primary-color */
+  .primary-color{
+    color: #FEA301;
+  }
+   /* black */
+   .text-black{
+    color: #111111;
+  }
+  /* navbar related styles */
+  .logo{
+    width: 62px;
+    height: 62px;
+    align-items: center;
+    gap: 10px;
+  }
+  .institute{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .navbar{
+     justify-content: space-between;
+     align-items: center;
+  }
+  .nav-links{
+    max-width: 386px;
+    margin:auto 186px;
+  }
+  .nav-item{
+    list-style: none;
+    margin-left: 2rem;
+  }
+  .nav-link{
+    text-decoration: none;
+     
+  }
+ .home-link{
+    font-size: 1.25rem;
+    font-weight: 700;
+ }
+ .about-link{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #01ACFD;
+ }
+ .facilities-link{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #05D4DF;
+ }
+ .admission-link{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #5D58EF;
+ }
+ 
