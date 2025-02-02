@@ -90,6 +90,8 @@
     font-weight: 500;
     color: #5D58EF;
  }
+ /* menu or hamburger */
+ 
  /* banner-styles */
  .banner{
     gap: 60px;
@@ -117,7 +119,7 @@
     padding: 10px 45px;
     color: #FFFFFF;
  }
- .banner-img{
+ .hero-kids-img{
     width: 465px;
     height: 575px;
  }
@@ -131,11 +133,36 @@
     .banner{
         flex-direction: column-reverse;
         justify-items: center;
-        margin-top: 10px;
-        gap: 10px; 
+        margin-top:0px;
+        gap:0px; 
     }
-    .banner-img{
-       
+    .hero-kids-img{
+       width:330px;
+       height:400px;
+       justify-items: center;
+       padding: 0%;
     }
-    
+    .banner-title{
+      font-size: 2rem;
+      text-align: center;
+      justify-items: center;
+      margin-top: 20px;
+    }
+    .banner-content{
+      width: 350px;
+      height: 250px;
+      text-align: center;
+    }
+    .banner-description{
+      margin-top: 18px;
+    }
+    .enroll-btn{
+      margin-top: 18px;
+    }
+    .nav-links{
+      display: none;
+    }
+    .main-title{
+      margin-top: 140px;
+    }
 }
