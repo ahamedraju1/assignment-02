@@ -495,7 +495,8 @@
 }
 
 @media screen and (min-width:576px) {
-      hr{
+      hr,
+      .hamburger{
         display: none;
       }
 }
