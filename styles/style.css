@@ -10,6 +10,8 @@
   /* shared styles */
   body{ 
     margin:0 auto;
+    justify-self: center;
+    max-width: 1440px;
   }
   header{
     max-width:1440px;
@@ -29,6 +31,12 @@
     padding: 10px 60px;
     color: #FFFFFF;
 
+  }
+  hr{
+    border: 1px solid orange;
+  }
+  main> section{
+    margin-top: 60px;
   }
   /* primary-color */
   .primary-color{
@@ -130,18 +138,20 @@
     height: 575px;
  }
   /*main styles  */
+  .set-align{
+    justify-self:center;
+  }
   main{
     max-width: 1440px;
     margin: 0 auto;
-  }
-  main> section{
-    margin-top: 60px;
+    justify-self: center;
   }
   /* background-image */
   .bg-image{
     position: absolute;
     width: 1140px;
     align-items: center;
+    justify-self: center;
   }
   /* card styles */
   .standard-title{
@@ -152,9 +162,10 @@
     margin-top: 140px;
   }
   .card-container{
-    width: 1160px;
+    max-width:1160px;
     height: 440px;
-    justify-content: center;
+    justify-items: center;
+    
   }
   .card{
     width: 365px;
@@ -196,9 +207,9 @@
   }
   /* ball styles */
   .balls{
-    margin-left: 45%;
     gap: 10px;
     margin-bottom: 60px;
+    justify-self: center;
   }
   .ball{
     width: 60px;
@@ -217,8 +228,9 @@
   } 
   .bg-img{
     position: absolute;
-    width:1160px;
-    height:900px;
+    width:1440px;
+    height:1018px;
+    justify-self: center;
   }
   .bg-gradient{
     background-image: linear-gradient(to top,rgba(254, 163, 1, 1),rgba(255, 255, 255, 1));
@@ -226,6 +238,7 @@
   .card-container-2{
     max-width: 1160px;  
     gap: 20px;
+    justify-self: center;
   }
   .img-container{
     width: 540px;
@@ -284,12 +297,77 @@
     padding: 10px;
     color: #FFFFFF;
     position: relative;
-    margin-top: 100px;
-    margin-left: 35%; 
+    margin-top: 80px;
+    margin-bottom: 60px; 
     font-size: 1.25rem;
     font-weight: 700;
-    /* background-size: cover; */
-    /* overflow: hidden; */
+    margin-left: 45%;
+  }
+  /* footer styles */
+  footer{
+    width: 1440px;
+    height:520px;
+    background-color:#01ACFD;
+    position: absolute;
+  }
+  .footer-container{
+    position: relative;
+    color: #FFFFFF; */
+    justify-content: space-between;
+  }
+.institute-part{
+  margin-left: 140px;
+  margin-top: 120px;
+  width: 300px;
+  height: 80px;
+}
+  .bag-logo{
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+
+  }
+  /* .institute-part,
+  .middle,
+  .about-icon{
+    flex: 1;
+    margin: 0 10px;
+    justify-content: space-between;
+  } */
+  .institute-title{
+    font-size: 2.04rem;
+    height: 80px;
+    font-weight: 700;
+  }
+  .institute-description{
+    font-size: 1.25rem;
+    margin-top: 35px;
+    width: 400px;
+  }
+  .middle{
+    margin-left: 160px;
+    margin-top: 125px;
+  }
+  .about-items{
+    
+  }
+  .about-title{
+    font-size: 1.50rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+  .about-item{
+   list-style: none;
+   margin-top: 20px;
+  
+  }
+  .about-link{
+     text-decoration: none;
+     color: #FFFFFF;
+  }
+  .about-icon{
+     margin-left: 200px;
+     margin-top: 130px;
   }
 /* media query for small devices */
 @media screen and (max-width:576px) {
@@ -322,18 +400,26 @@
    .enroll-btn{
      margin-top: 15px;
    }
-   .nav-links{
+   .navbar
+    {
+      margin: 0 auto;
+      width: auto;
+      height: 70px;
+      justify-content:space-between;
+      justify-items: center;
+    }
+   .nav-links,
+   .btn-primary,
+   .institute{
      display: none;
-     margin-left: 0px;
-     
+     margin-left: 0px;   
    }
    .standard-title{
      margin-top: 140px;
      margin-bottom: 20px;
      font-size: 1.5rem;
      justify-items: center;
-     align-items: center;
-      
+     align-items: center;   
    }
     .card-container{
       display: grid;
@@ -367,5 +453,49 @@
       font-size: 0.8rem;
       padding:15px 20px 20px 20px;
     }
+    .footer{
+     max-height: 100%;
+     padding: 0px;
+    }
+    .footer-container{ 
+      flex-direction: column;
+      align-items: left;
+    }
+    .institute-part{
+       margin-top: 50px;
+       padding-inline: 0px;
+    }
+    .institute-description{
+      margin-top:8px;
+    } 
+    .institute-part,
+    .middle,
+    .about-icon{
+      margin:0 auto;
+      margin-right: 1200px;
+    }
+   .middle{
+    margin-top: 180px;
+    margin-bottom: 0px;
+   }
+   .about-item{
+    margin-top: 2px;
+   }
+   .about-title{
+    margin-top: 7px;
+    margin-bottom: 0px;
+   }
+   .icon-title{
+    margin-top: 0px;
+   }
+   .about-link{
+    margin-top: 0px;
+   }
    
+}
+
+@media screen and (min-width:576px) {
+      hr{
+        display: none;
+      }
 }
